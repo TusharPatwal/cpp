@@ -23,7 +23,7 @@ int main()
         cout<<"B is greater than a."<<endl;
     }*/
 
-    int a;
+    /*int a;
     cout << "Enter the value of a: " << endl;
     cin >> a;
     if (a > 0)
@@ -37,5 +37,18 @@ int main()
     else
     {
         cout << "A is 0" << endl;
+    }*/
+    
+    char ch;
+    cout<<"Enter the char: "<<endl;
+    cin>>ch;
+    if(ch>=97 && ch <= 122){
+        cout<<"Lowercase"<<endl;
+    }
+    else if(ch>=65 && ch <= 90){
+        cout<<"uppercase"<<endl;
+    }
+    else if(ch>=48 && ch <= 57){
+        cout<<"Numeric"<<endl;
     }
 }
