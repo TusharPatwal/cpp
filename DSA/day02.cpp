@@ -1,7 +1,8 @@
 // looping statements
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     /* use of while loop
     int i = 1,n;
     cin>>n;
@@ -9,7 +10,6 @@ int main(){
         cout<< i<< " ";
         i++;
     }*/
-
 
     // sum from 1 to n using while loop
     /*
@@ -21,7 +21,6 @@ int main(){
     }
     cout<<"Value of sum is: "<<sum<<endl;
     */
-
 
     // sum of all even numbers from one to n
     /*
@@ -36,7 +35,6 @@ int main(){
     cout<<"Sum of even numbers: "<< sum << endl;
     */
 
-
     // fahrenheit to celsius
     /*
     int f;
@@ -48,25 +46,22 @@ int main(){
     */
 
     // prime number
-    int num = 2, n, count=0;
+    int n, count = 0;
     cin >> n;
-    while(num<n){    
-        if(n%num==0){
-            continue;
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            count = 1;
+            break;
         }
-        else{
-            count++;
-        }
-        num++;
     }
-    if(count == 0){
-        cout<<"Prime";
+    if (count != 0)
+    {
+        cout << "Not Prime Number";
     }
-    else{
-        cout<<"Not a prime";
-
+    else
+    {
+        cout << "Prime number";
     }
-    
-
-
 }
