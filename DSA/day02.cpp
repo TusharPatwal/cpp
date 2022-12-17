@@ -45,7 +45,8 @@ int main()
     cout<<"Value in celsius: "<< c << endl;
     */
 
-    // prime number
+    // prime number using for loop
+    /*
     int i, n;
     bool is_prime = true;
 
@@ -69,4 +70,59 @@ int main()
         cout << n << " is a prime number";
     else
         cout << n << " is not a prime number";
+    */
+ 
+
+    // prime number using while loop
+    /*
+    int n;
+    cin>>n;
+    int i = 2;
+
+    while(i<n){
+        if(n%i==0){
+            cout<<"Not a prime number"<<endl;
+            break;
+        }
+        else{
+            cout<<"Prime number"<<endl;
+        }
+        i++;
+    }
+    */ 
+
+
+    // Pattern using while loops
+    // draw a 4*4 pattern using *
+    /*
+    int i=1,n;
+    cin>>n;
+    
+    while(i<=n){
+        
+        int j = 1;
+        while(j<=n){
+            cout<<"* ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+    */
+
+
+    // draw numeric pattern usiing while loops
+    int i=1,n;
+    cin>>n;
+    
+    while(i<=n){
+        
+        int j = 1;
+        while(j<=n){
+            cout<< i << " ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
 }
