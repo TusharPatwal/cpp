@@ -360,7 +360,7 @@ int main()
 
 
     // draw right angle triangle in character by while loops(part-5)
-    
+    /*
     int i = 1, n;
     cin>>n;
     char ch = 'A';
@@ -374,4 +374,75 @@ int main()
         cout<<endl;
         i++;
     }
+    */
+
+    // draw right angle triangle in character by while loops(part-6)
+    /*
+    int i = 1, n;
+    cin>>n;
+    char ch = 'A';
+    while(i<=n){
+        
+        int j = 1;
+        while(j<=i){
+            cout<< ch++ <<" ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+    */
+
+    // draw right angle triangle in character by while loops(part-6)   
+    /*
+    int i = 1, n;
+    cin>>n;
+    char ch = 'A';
+    while(i<=n){
+        
+        int j = 1;
+        while(j<=i){
+            cout<< char(ch+i+j-2) <<" ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+    */
+
+    
+    // draw right angle triangle in character by while loops(part-7)
+    /*
+    int i = 1, n;
+    cin >> n;
+    char ch = 'A';
+    while(i<=n){
+        int j = 1;
+        while(j<=i){
+            cout<<char(ch+n-i+j-1)<<" ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    } 
+    */
+
+
+    // draw right angle triangle in character by while loops(part-7)
+
+    int i = 1, n;
+    cin >> n;
+    char ch = 'A';
+    while(i<=n){
+        int j = 1;
+        char c = (ch+i-1);
+        while(j<=n){
+            cout<< c++ <<" ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    } 
+
+
 }
