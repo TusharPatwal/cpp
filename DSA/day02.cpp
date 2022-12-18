@@ -605,7 +605,7 @@ int main()
 
 
     // draw right angle triangle by while loops(part-15)
-
+    /*
     int i = 1, n;
     cin>>n;
 
@@ -625,6 +625,42 @@ int main()
             cout<< i-z << " ";
             z++;
         }
+        cout<<endl;
+        i++;        
+    }
+    */
+
+
+    // draw right angle triangle by while loops(part-15)
+
+    int i = 1, n;
+    cin>>n;
+     
+    while (i<=n){
+        int j = 1;
+        int x = 1;
+        int space = n-i+1;
+        while (space){
+            cout<< x++ <<" ";
+            space--;
+        }
+        while(j<=i-1){
+            cout<< "# ";
+            j++;
+        }
+        
+        int z = 1;
+        while(z<=i-1){
+            cout<< "# ";
+            z++;
+        }
+        int y = 1;
+        while(y<=n-i+1){
+            int c = x--;
+            cout<< c-1 <<" ";
+            y++;
+        }
+
         cout<<endl;
         i++;        
     }
