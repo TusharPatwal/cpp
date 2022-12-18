@@ -429,7 +429,7 @@ int main()
 
 
     // draw right angle triangle in character by while loops(part-7)
-
+    /*
     int i = 1, n;
     cin >> n;
     char ch = 'A';
@@ -443,6 +443,189 @@ int main()
         cout<<endl;
         i++;
     } 
+    */
 
 
+    // draw right angle triangle in character by while loops(part-8)
+    /*
+    int n; 
+    cin >> n;
+    
+    int i = 1;
+    while(i<=n){
+
+        //  print space
+        int space = n-i;
+        while(space){
+            cout<<"  ";
+            space--;
+        }
+
+        // print stars
+        int j = 1;
+        while(j<=i){
+            cout<<"# ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+    */
+
+
+    // draw right angle triangle in character by while loops(part-9)
+    /*
+    int n, i = 1;
+    cin>>n;
+    while(i<=n){
+        int j = 1;
+        while(j<=n-i+1){
+            cout<<" #";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+    */
+
+
+    // draw right angle triangle by while loops(part-10)
+    /*
+    int n;
+    cin>>n;
+    
+    int i = 1;
+    while (i<=n){
+        int space = i - 1;
+        while (space){
+            cout<<"  ";
+            space--;
+        }
+        int j = 1;
+        while(j<=n - i + 1){
+            cout<<"# ";
+            j++;
+        }
+        cout<<endl;
+        i++;        
+    }
+    */
+
+    // draw right angle triangle by while loops(part-11)
+    /*
+    int n;
+    cin>>n;
+    
+    int i = 1;
+    while (i<=n){
+        int space = i - 1;
+        while (space){
+            cout<<"  ";
+            space--;
+        }
+        int j = 1;
+        while(j<=n - i + 1){
+            cout<<i << " ";
+            j++;
+        }
+        cout<<endl;
+        i++;        
+    }
+    */
+
+
+    // draw right angle triangle by while loops(part-12)
+    /*
+    int n;
+    cin>>n;
+    
+    int i = 1;
+    while (i<=n){
+        int space = n - i;
+        while (space){
+            cout<<"  ";
+            space--;
+        }
+        int j = 1;
+        while(j<=i){
+            cout<<i << " ";
+            j++;
+        }
+        cout<<endl;
+        i++;        
+    }
+    */
+
+
+    // draw right angle triangle by while loops(part-13)
+    /*
+    int n;
+    cin>>n;
+    
+    int i = 1;
+    while (i<=n){
+        int space = i-1;
+        while (space){
+            cout<<"  ";
+            space--;
+        }
+        int x = i;
+        int j = 1;
+        while(j<=n-i+1){
+            cout<< x++ << " ";
+            j++;
+        }
+        cout<<endl;
+        i++;        
+    }
+    */
+
+
+    // draw right angle triangle by while loops(part-14)
+    /*
+    int n;
+    cin>>n;
+    int x = 1;
+    int i = 1;
+    while (i<=n){
+        int space = n-i;
+        while (space){
+            cout<<"  ";
+            space--;
+        }
+        int j = 1;
+        while(j<=i){
+            cout<< x++ << " ";
+            j++;
+        }
+        cout<<endl;
+        i++;        
+    }
+    */
+
+
+    // draw right angle triangle by while loops(part-15)
+
+    int i = 1, n;
+    cin>>n;
+
+    while (i<=n){
+        int space = n-i;
+        while (space){
+            cout<<"  ";
+            space--;
+        }
+        int j = 1;
+        while(j<=i){
+            cout<< j << " ";
+            j++;
+        }
+        int z = 1;
+        while(z<=i-1){
+            cout<< i-z << " ";
+            z++;
+        }
+        cout<<endl;
+        i++;        
+    }
 }
