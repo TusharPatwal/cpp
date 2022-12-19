@@ -70,7 +70,7 @@ int main(){
     */
 
     // prime number using for loop
-
+    /*
     int n;
     cin>>n;
     bool isPrime = true;
@@ -87,5 +87,20 @@ int main(){
     else{
         cout<<"It is not a prime number"<<endl;
     }
+    */
+
+
+    // continue
+    /*
+    for(int i = 1; i<6; i++){
+        if(i==3){
+            continue;
+        }
+        cout<<i<<endl;
+    }
+    */
+
+
+    
 
 }
