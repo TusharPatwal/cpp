@@ -41,7 +41,7 @@ int main(){
 
 
     // negative decimal to binary
-
+    /*
     long long int n;
     cin>>n;
     unsigned long long int i = 0, ans = 0;
@@ -54,6 +54,22 @@ int main(){
         ans = (pow(10,i)+lastbit)+ans;
         n = n>>1;
         i++;
+    }
+    cout<<ans<<endl;
+    */
+
+
+    // reverse integer
+    int n, ans;
+    cin>>n;
+    while(n>0){
+        int digit = n%10;
+        if((ans > INT_MAX/10) || (ans < INT_MIN/10)){
+                cout<<0<<endl;
+                exit(0);
+            }
+        ans = ans*10 + digit;
+        n /= 10;
     }
     cout<<ans<<endl;
 }
