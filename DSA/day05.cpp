@@ -50,6 +50,7 @@ int main(){
     // home work
     // break it into notes of 100, 50, 20, 1 using switch case
 
+    
     int amount = 1330;
     int a = 1330/100;
     int a1 =  a*100;
@@ -65,6 +66,6 @@ int main(){
     amount = amount - d1;
 
     cout<<a<<endl<<b<<endl<<c<<endl<<d<<endl;
-    cout<<amount<<endl;    
+//     cout<<amount<<endl;    
 
 }
