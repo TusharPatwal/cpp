@@ -1,6 +1,39 @@
 #include<iostream>
 using namespace std;
 
+// swap alternate in array
+
+void printArray(int arr[], int n){
+    for (int i = 0; i<n; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+void swapAlternate(int arr[], int n){
+    for(int i = 0; i<n; i+=2){
+        if(i+1<n){
+            swap(arr[i],arr[i+1]);
+        }
+    }
+}
+
+int main(){
+    int arr1[5] = {1,2,7,8,5};
+    int arr2[6] = {1,2,3,4,5,6};
+    swapAlternate(arr1,5);
+    printArray(arr1,5);
+    swapAlternate(arr2,6);
+    printArray(arr2,6);
+
+}
+
+
+
+
+
+
+/*
 // reverse an array
 void printArray(int arr[], int n){
     for (int i = 0; i<n; i++){
@@ -29,9 +62,11 @@ int main(){
     printArray(arr, 6);
     printArray(brr, 5);
 }
+*/
 
 
 /*
+// sum of all elements in array
 int arraySum(int arr[], int n){
     int sum = 0;
     for(int i = 0; i<n; i++){
