@@ -1,6 +1,29 @@
 #include<iostream>
 using namespace std;
 
+// find unique element in array
+
+void printArray(int arr[], int n){
+    for (int i = 0; i<n; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int findUnique(int arr[],int n){
+    int ans =  0;
+    for(int i = 0; i<n; i++){
+        ans = ans^arr[i];
+    }
+    return ans;
+}
+
+int main(){
+    int arr[9] = {4,5,6,5,4};
+    cout<< findUnique(arr, 5);
+}
+
+/*
 // swap alternate in array
 
 void printArray(int arr[], int n){
@@ -13,7 +36,11 @@ void printArray(int arr[], int n){
 void swapAlternate(int arr[], int n){
     for(int i = 0; i<n; i+=2){
         if(i+1<n){
-            swap(arr[i],arr[i+1]);
+            // swap(arr[i],arr[i+1]);
+            //         or
+            int temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
         }
     }
 }
@@ -27,8 +54,7 @@ int main(){
     printArray(arr2,6);
 
 }
-
-
+*/
 
 
 
