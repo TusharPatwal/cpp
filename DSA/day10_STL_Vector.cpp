@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-
+    /*
     vector<int> v;
 
     vector<int> a(5,1);
@@ -55,4 +55,29 @@ int main(){
     for(int i:copy){
         cout<<i<<" ";
     }cout<<endl;
+    */
+
+    vector<int> nums;
+    
+    nums.push_back(1);
+    nums.push_back(2);
+    nums.push_back(1);
+
+    cout<<"vector nums -> ";
+    for(int i:nums){
+        cout<<i<<" ";
+    }cout<<endl;
+
+    
+    vector<int> x = { 1, 2, 1 };
+    vector<int> y(x);
+ 
+    // 1. Copy constructor + vector::inser
+    x.insert(x.end(), y.begin(), y.end());
+    cout<<"vector x -> ";
+    for(int i:x){
+        cout<<i<<" ";
+    }cout<<endl;
+    
+    
 }
