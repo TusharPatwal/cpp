@@ -23,10 +23,10 @@ class complex {
 };
 
 int main() {
-    complex obj(9,3);
+    complex obj1(9,3);
 
-    ++obj;
+    ++obj1;
 
-    obj.print();
+    obj1.print();
     return 0;
 }
