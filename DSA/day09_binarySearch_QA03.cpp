@@ -1,10 +1,15 @@
-// find the maximum in given array
-#include<iostream>
-#include<algorithm>
-#include<vector>
+// Find the maximum element in an array
+#include <algorithm>
+#include <iostream>
+#include <iterator>
+#include <vector>
 using namespace std;
 
-int main(){
-    vector<int> v = {1,2,3,4,5,6,7,8};
-    // int maxi = max(v.begin(), v.end());
+int main() {
+  vector<int> numbers = {3, 1, 4, 1, 5, 9, 2, 6};
+
+  auto max_it = max_element(begin(numbers), end(numbers));
+  cout << "The maximum value in the array is: " << *max_it << '\n';
+
+  return 0;
 }
