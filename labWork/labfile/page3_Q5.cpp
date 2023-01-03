@@ -86,5 +86,9 @@ int main()
     cout << "Matrix m3 after m1 + m2:" << endl;
     m4.print();
 
+    // Multiply the two matrices
+    Matrix2x2 m5 = m1 * m2;
+    cout << "Matrix m3 after m1 * m2:" << endl;
+    m5.print();
 
 }
