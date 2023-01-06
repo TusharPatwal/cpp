@@ -6,9 +6,7 @@ using namespace std;
 class base {
 public:
   int n, m;
-  void sum(int n, int m) { 
-    cout << n << " + " << m << " = " << n + m << endl; 
-    }
+  void sum(int n, int m) { cout << n << " + " << m << " = " << n + m << endl; }
 };
 
 class derived : public base {
