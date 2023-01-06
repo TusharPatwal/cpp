@@ -8,16 +8,13 @@ public:
   Counter(int start) : count(start) {}
 
   // Overloaded ++ operator
-  Counter operator++() { 
-    return Counter(++count); }
+  Counter operator++() { return Counter(++count); }
 
   // Overloaded -- operator
-  Counter operator--() { 
-    return Counter(--count); }
+  Counter operator--() { return Counter(--count); }
 
   // Member function to return the current count
-  int GetCount() const { 
-    return count; }
+  int GetCount() const { return count; }
 
 private:
   int count;
