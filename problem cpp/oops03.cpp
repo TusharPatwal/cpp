@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class student{
+class date{
     public:
     int date;
     int month;
@@ -12,16 +12,16 @@ class student{
     void outdata();
 
 };
-void student::setdata(int d, int m, int y){
+void date::setdata(int d, int m, int y){
     date = d;
     month = m;
     year = y;
 }
-void student :: outdata(){
+void date :: outdata(){
     cout<<date<<"-"<<month<<"-"<<year<<endl;
 }
 int main(){
-    student o;
+    date o;
     o.setdata(8,10,2002);
     o.outdata();
 }
