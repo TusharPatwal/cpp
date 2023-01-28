@@ -4,25 +4,23 @@ using namespace std;
 
 class animal{
     public:
-    int type;
+    string type;
     string name;
-    void make_sound(int sound){
-        cout<<"sound createrd by animal"<<endl;
-    }
 
-};
-
-class dog: public animal{
-    public:
-    void setdata(string n){
+    void setdata(string n, string t){
         name = n;
+        type = t;
     }
-    void display(){
-        cout<<"Name of dog: "<<name<<endl;
+    void getdata(){
+        cout<<"Name of the animal is: "<<name<<endl;
+        cout<<"Type of animal is: "<<type<<endl;
     }
+
 };
+
 int main(){
-    dog d1;
-    d1.setdata("Johnny");
-    d1.display();
+    animal dog;
+    dog.setdata("dog", "pet");
+    dog.getdata();
+
 }
