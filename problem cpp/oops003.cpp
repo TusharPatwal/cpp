@@ -28,6 +28,7 @@ void binary ::checkBin(void) {
 }
 
 void binary ::onesCompliment(void) {
+    checkBin(); // nesting member function in other member function
   for (int i = 0; i < s.length(); i++) {
     if (s.at(i) == '0') {
       s.at(i) = '1';
@@ -45,7 +46,7 @@ void binary ::display(void) {
 int main() {
   binary num1;
   num1.read();
-  num1.checkBin();
+//   num1.checkBin();
 
   num1.onesCompliment();
   num1.display();
