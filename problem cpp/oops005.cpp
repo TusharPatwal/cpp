@@ -23,7 +23,7 @@ class employee{
 };
 
 // count is the static data member of class employee
-int employee :: count=0; // default value of static data member is 0. you can pass value of static data member outside the class
+int employee :: count=0; // default value of static data member is 0. You can pass value of static data member outside the class
 
 int main(){
     employee tushar;
